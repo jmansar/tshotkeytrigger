@@ -24,3 +24,10 @@ jobs:
 
       - name: Compile
         run: meson compile -C builddir
+
+      - name: Create archive
+        run: tar czvf tshotkeytrigger-linux-amd64.tar.gz -C builddir tshotkeytrigger LICENSE THIRD_PARTY_LICENSES
+
+      - uses: actions/upload-artifact@v4
+        name: tshotkeytrigger-linux-amd64.tar.gz
+        path: builddir/tshotkeytrigger-linux-amd64.tar.gz
