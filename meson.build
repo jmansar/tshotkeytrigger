@@ -1,4 +1,4 @@
-project('tshotkeytrigger', 'c', version: '0.0.1')
+project('tshotkeytrigger', 'c', version: '0.1.0')
 
 config = configuration_data({
   'version' : meson.project_version(),
