@@ -28,8 +28,6 @@ pacman -S libwebsockets
 ```
 
 2. Download the archive from the releases page, extract it and copy the executable to your selected directory.
-> **Note:** This application is still under development and has not been released.
-
 
 ## Usage
 
