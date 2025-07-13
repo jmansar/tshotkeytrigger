@@ -19,7 +19,7 @@ This tool is built to be run on Linux.
 
 Debian/Ubuntu
 ```
-apt install libwebsockets
+apt install libwebsockets19t64 
 ```
 
 Arch Linux
@@ -28,8 +28,6 @@ pacman -S libwebsockets
 ```
 
 2. Download the archive from the releases page, extract it and copy the executable to your selected directory.
-> **Note:** This application is still under development and has not been released.
-
 
 ## Usage
 

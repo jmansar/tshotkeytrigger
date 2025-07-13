@@ -1,0 +1,34 @@
+name: Build
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install meson ninja
+          sudo apt update
+          sudo apt install libwebsockets-dev
+
+      - name: Configure project
+        run: meson setup builddir --buildtype=release
+
+      - name: Compile
+        run: meson compile -C builddir
+
+      - name: Create archive
+        run: tar czvf tshotkeytrigger-linux-amd64.tar.gz -C builddir tshotkeytrigger LICENSE THIRD_PARTY_LICENSES
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tshotkeytrigger-linux-amd64.tar.gz
+          path: tshotkeytrigger-linux-amd64.tar.gz

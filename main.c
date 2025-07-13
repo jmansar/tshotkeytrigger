@@ -276,7 +276,7 @@ int main(int argc, const char **argv) {
 
   if (!(button_id = lws_cmdline_option(argc, argv, "--button-id"))) {
     printf("Invalid parameters.\n");
-    printf("Use: \"tshotkeytrigger --help\" to see the correct usage.");
+    printf("Use: \"tshotkeytrigger --help\" to see the correct usage.\n");
 
     return ERR_PARAMETERS;
   }
