@@ -1,0 +1,4 @@
+# fix for clang LSP complain about missing "config.h"
+CompileFlags:
+  Add:
+    - "-Ibuilddir"
