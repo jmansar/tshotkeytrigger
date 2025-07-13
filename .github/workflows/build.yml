@@ -31,4 +31,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: tshotkeytrigger-linux-amd64.tar.gz
-          path: builddir/tshotkeytrigger-linux-amd64.tar.gz
+          path: tshotkeytrigger-linux-amd64.tar.gz
