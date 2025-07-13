@@ -17,7 +17,7 @@ jobs:
         run: |
           python -m pip install meson ninja
           sudo apt update
-          sudo apt install libwebsockets
+          sudo apt install libwebsockets-dev
 
       - name: Configure project
         run: meson setup builddir --buildtype=release
