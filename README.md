@@ -19,7 +19,7 @@ This tool is built to be run on Linux.
 
 Debian/Ubuntu
 ```
-apt install libwebsockets
+apt install libwebsockets19t64 
 ```
 
 Arch Linux
