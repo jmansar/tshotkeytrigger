@@ -23,7 +23,7 @@ Build and install the AUR package - [tshotkeytrigger](https://aur.archlinux.org/
 
 You can download the provided binary from [Releases](https://github.com/jmansar/tshotkeytrigger/releases) page. Extract the archive and place the executable in your preferred directory.
 
-The binary requires the `libwebsockets` shared library, version 4.3.*. Use your system's package manager to install the library.
+The binary requires `libwebsockets` shared library, version `4.3.*`. Use your system's package manager to install it.
 
 For example, on Debian/Ubuntu:
 ```
