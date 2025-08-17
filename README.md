@@ -15,19 +15,20 @@ For example on Gnome: [Gnome Keyboard Shortcuts](https://help.gnome.org/users/gn
 
 This tool is built to be run on Linux.
 
-1. Install `libwebsockets` library.
+### Arch Linux
 
-Debian/Ubuntu
+Build and install the AUR package - [tshotkeytrigger](https://aur.archlinux.org/packages/tshotkeytrigger).
+
+### Other
+
+You can download the provided binary from [Releases](https://github.com/jmansar/tshotkeytrigger/releases) page. Extract the archive and place the executable in your preferred directory.
+
+The binary requires `libwebsockets` shared library, version `4.3.*`. Use your system's package manager to install it.
+
+For example, on Debian/Ubuntu:
 ```
 apt install libwebsockets19t64 
 ```
-
-Arch Linux
-```
-pacman -S libwebsockets
-```
-
-2. Download the archive from the releases page, extract it and copy the executable to your selected directory.
 
 ## Usage
 
