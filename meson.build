@@ -13,5 +13,5 @@ fs.copyfile('LICENSE', 'LICENSE')
 fs.copyfile('THIRD_PARTY_LICENSES', 'THIRD_PARTY_LICENSES')
 
 libwebsocketsdep = dependency('libwebsockets')
-executable('tshotkeytrigger', ['main.c', 'datafile.c'], dependencies: [libwebsocketsdep])
+executable('tshotkeytrigger', ['main.c', 'datafile.c'], dependencies: [libwebsocketsdep], install: true)
 
