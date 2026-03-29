@@ -10,6 +10,10 @@ For example on Gnome: [Gnome Keyboard Shortcuts](https://help.gnome.org/users/gn
 
 > **Note:** This tool cannot simulate push-to-talk key presses, as it does not support holding a key down, only discrete press and release actions can be triggered.
 
+> **Alternative:** On some desktop environments - KDE Plasma - you can alternatively run TS6 in XWayland mode without additional tooling and have global shortcuts work as intended.
+> See the [guide](https://gist.github.com/SavageCore/5dc17e04d6b563d19698889ce3e3f9ee)
+> However, It doesn't work on GNOME as TS6 only receives key presses when an XWayland application is focused, but not when a native Wayland app is focused.
+
 
 ## Installation
 
