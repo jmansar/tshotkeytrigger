@@ -83,6 +83,13 @@ Compile the project
 meson compile -C builddir
 ```
 
+### Install
+
+Install the executable to the default location. 
+```
+meson install -C builddir
+```
+
 ## License
 This project is licensed under the MIT License. See [LICENSE](./LICENSE) for full text.
 
